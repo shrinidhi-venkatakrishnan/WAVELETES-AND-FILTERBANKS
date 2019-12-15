@@ -1,1 +1,1 @@
-uploaded the entire folder for denoising
+Run the main file denoising_image_ece251c.m

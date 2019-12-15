@@ -1,15 +1,4 @@
 function imgUS = my_us2d(I, R)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% function to upsample a image row or column wise
-% 
-% Input
-% I       -       Input image
-% R       -       Row - (1)
-%                 Column  - (0)
-%                 
-% Output
-% imgDS  -       Image upsampled
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %get size of image
 [m,n] = size(I);

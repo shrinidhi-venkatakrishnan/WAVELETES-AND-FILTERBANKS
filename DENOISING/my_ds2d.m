@@ -1,15 +1,6 @@
 function imgDS = my_ds2d(I, R)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % function to downsample a image row or column wise
-% 
-% Input
-% I       -       Input image
-% R       -       Row - (1)
-%                 Column  - (0)
-%                 
-% Output
-% imgDS  -       Image downsampled
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %get size of image
 [m,n] = size(I);
