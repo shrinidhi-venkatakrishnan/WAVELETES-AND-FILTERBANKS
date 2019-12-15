@@ -1,5 +1,5 @@
 function imageReconst = InvdiscreteWavletTrans(C, S, J, lpfCoeff)
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % function to compute discrete wavelet transform at level J of an image using provided
 % low pass filter coefficients
 %
@@ -24,12 +24,7 @@ function imageReconst = InvdiscreteWavletTrans(C, S, J, lpfCoeff)
 %
 % J         -        levels of transform
 %
-% lpfCoeff    -       Low Pass Filter Coefficients
-%
-%
-% Output
-% imageReconst    -   Reconstructed image
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 
 %calculate LPF and HPF coeff for reconstruction
