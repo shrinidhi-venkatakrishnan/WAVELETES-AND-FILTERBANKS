@@ -52,4 +52,12 @@ subplot(2,2,4),affiche(imageReconstHard), title('Denoise Hard Thresholding')
 meanSqErrorSoft = mean((I(:)-imageReconstSoft(:)).^2)
 meanSqErrorHard = mean((I(:)-imageReconstHard(:)).^2)
 
+% performance metric calculation
+meanSqErrorSoft = mean((I(:)-imageReconstSoft(:)).^2);
+meanSqErrorHard = mean((I(:)-imageReconstHard(:)).^2);
+psnr_hard=10*log10(max(255^2/meanSqErrorHard))
+ssim_hard=ssim(I,imageReconstHard)
+psnr_soft=10*log10(max(255^2/meanSqErrorSoft))
+ssim_soft=ssim(I,imageReconstSoft)
+
 
