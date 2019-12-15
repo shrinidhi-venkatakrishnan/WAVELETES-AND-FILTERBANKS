@@ -1,10 +1,11 @@
 %% Image Denoising
 
-% read the  image
-I = double(imread('Lena256.bmp'));
+% read the  imagE
+I = double(imread('case.jpg'));
 
 % Daubechies D4 Filter
 lpfCoeff =[0.48296 0.83652 0.22414 -0.12941];
+% HAAR Filter
 % lpfCoeff=[0.707,0.707]; % HAAR WAVELET LPF
 
 
@@ -53,16 +54,15 @@ meanSqErrorHard = mean((I(:)-imageReconstHard(:)).^2)
 
 
 % %% UNCOMMENT BELOW CODE TO RUN THE DENOISING FOR VARAINCE VARYING FROM 0 to 20 and plot error
-% 
-% %% Image Denoising
-% 
-% % read the lena image
-I = double(imread('Lena256.bmp'));
-% I = double(imread('cameraman.tif'));
-% I = double(imread('rice.png'));
+
+% % read the image
+I = double(imread('case.jpg'));
 
 % Daubechies D4 Filter
 lpfCoeff =[0.48296 0.83652 0.22414 -0.12941];
+% HAAR Filter
+% lpfCoeff=[0.707,0.707]; % HAAR WAVELET LPF
+
 
 % Change level of Decmposition HERE
 J = 4;
