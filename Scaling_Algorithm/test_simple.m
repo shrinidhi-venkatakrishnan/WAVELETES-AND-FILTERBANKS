@@ -2,14 +2,14 @@ close all
 clear all
 clc
 
-%% 
-image = double(rgb2gray(imread('tiger_template.jpg')));
-template =  double(rgb2gray(imread('tiger_template.jpg')));
+%% Input Image and Template
+image = double(rgb2gray(imread('shelf_1_template.jpg')));
+template =  double(rgb2gray(imread('shelf_1_template.jpg')));
 image_64 = imresize(image, [128 128]);
 template_32 = imresize(template, [32 32]);
 % image_64 = image;
 % template_32 = template;
-%%
+%% Dispay Image and Template
 [m,n] = size(image_64);
 % n_new = min(m,n);
 % image_64 = imresize(image_64, [m,n]);
@@ -46,54 +46,10 @@ for i= 1:m
         end
     end
 end
-%% 
-% template_position = imagecorrelation2(temp_template, image)
+%% Perform Hadamard Transform 
 H_1 = himage(template_mod,image_mod);
-% H_1 = haarshsc(template_mod, image_mod);
 
 %%
-[max_val, translation_row] = max(H_1');
-% [max_val2 , 
-
-
-
-
-
-%%
-% template_scaled = imresize(template_32, [mt*scale_factor, nt*scale_factor]);
-% c = normxcorr2(template_scaled,image_64);
-% figure, imagesc(c); colorbar;
-% 
-% figure, surf(c), shading flat
-% 
-% %%
-% % 
-% % [ypeak, xpeak] = find(c==max(c(:)));
-% % yoffSet = ypeak-size(template_scaled,1);
-% % xoffSet = xpeak-size(template_scaled,2);
-% % 
-% % figure
-% % imshow(image_64,[]);
-% % imrect(gca, [xoffSet+1, yoffSet+1, size(template_scaled,2), size(template_scaled,1)]);
-% 
-% % figure, 
-% % subplot(1,2,1)
-% % imshow(uint8(template_scaled))
-% % 
-% % subplot(1,2,2)
-% % imshow(uint8(image_64))
-% 
-% 
-% 
-% % [trans_max, transition_row] = max(max_val);
-% % [val, scale_column] = max(H_1(transition_row,:));
-% % disp(scale_column);
-% % disp(transition_row);
-% 
-% 
-% 
-% %% 
-% 
 
 
 
