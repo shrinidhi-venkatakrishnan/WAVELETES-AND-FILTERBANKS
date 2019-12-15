@@ -1,1 +1,1 @@
-image_denoising_ece251c.m
+Run the main file denoising_image_ece251c.m
